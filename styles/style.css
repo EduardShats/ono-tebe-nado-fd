@@ -12,20 +12,20 @@
 
 .menu__list {
   display: flex;
-  justify-content: flex-start;
-  align-content: baseline;
   list-style-type: circle;
+  /*
+  Этот код, если нужно сдвинуть контакты как в макете, 
+  седал его по центру, т.к. более эстетично:
+  margin-bottom: 5px;
+  */
 }
 
 .menu__item {
-    margin-right: 32px;
-    align-content: center;
-    font-family: Raleway;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 0%;
+  margin-right: 32px;
+  align-content: center;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .menu__item:first-child {
@@ -38,24 +38,30 @@
   height: 105px;
   place-self: center;
   position: relative;
+  border: 0;
 }
 
 .logo__image {
+  height: 105px;
+  /*
+  Этот код, если нужно сдвинуть логотип как в макете, 
+  седал его по центру, т.к. более эстетично:
   position: absolute;
   top: -2px;
-  right: -2px;
-  height: 105px;
+  right: -2px;*/
 }
 
 .contacts {
   margin-left: 186px;
   list-style: none;
+  /*
+  Этот код, если нужно сдвинуть контакты как в макете, 
+  седал его по центру, т.к. более эстетично:
+  margin-bottom: 1px;
+  */
 }
 
 .contacts__item {
-  font-family: Raleway;
-  font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
   line-height: 24.3px;
   letter-spacing: 0%;
