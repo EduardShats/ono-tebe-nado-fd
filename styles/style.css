@@ -1,68 +1,153 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr 148px 1fr;
+  grid-template-columns: 1fr min-content 1fr;
   padding: 94px 50px;
-  justify-content: space-between;
-  align-content: center;
+  align-items: center;
 }
 
-.menu {
+.header__menu {
   display: flex;
 }
 
-.menu__list {
+.header__links-list {
   display: flex;
+  gap: 32px;
   list-style-type: circle;
   /*
-  Этот код, если нужно сдвинуть контакты как в макете, 
+  Этот код, если нужно сдвинуть контакты как в макете,
   седал его по центру, т.к. более эстетично:
-  margin-bottom: 5px;
+  margin-top: -5px;
   */
 }
 
-.menu__item {
-  margin-right: 32px;
+.header__links-list-item {
   align-content: center;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
 }
 
-.menu__item:first-child {
+.header__links-list-item_no-bullit {
   list-style: none;
 }
 
-.logo__wrap {
+.header__link_active {
+  border-bottom: 0;
+}
+
+.header__logo {
   display: block;
   width: 148px;
   height: 105px;
-  place-self: center;
-  position: relative;
   border: 0;
 }
 
-.logo__image {
+.header__logo-image {
   height: 105px;
   /*
-  Этот код, если нужно сдвинуть логотип как в макете, 
+  Этот код, если нужно сдвинуть логотип как в макете,
   седал его по центру, т.к. более эстетично:
-  position: absolute;
-  top: -2px;
-  right: -2px;*/
-}
-
-.contacts {
-  margin-left: 186px;
-  list-style: none;
-  /*
-  Этот код, если нужно сдвинуть контакты как в макете, 
-  седал его по центру, т.к. более эстетично:
-  margin-bottom: 1px;
+  margin-top: -2px;
+  margin-right: -2px;
   */
 }
 
-.contacts__item {
+.address {
+  max-width: 240px;
+  justify-self: end;
+}
+
+.header__address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  /*
+  Этот код, если нужно сдвинуть контакты как в макете,
+  седал его по центру, т.к. более эстетично:
+  margin-top: -7px;
+  */
+}
+
+.header__address-item {
   font-size: 18px;
-  line-height: 24.3px;
-  letter-spacing: 0%;
+  line-height: 1.35em;
+}
+
+.cover {
+  background-image: url('../images/cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 165px 50px 50px;
+  display: grid;
+  gap: 106px;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 60%;
+}
+
+.cover__title {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.15em;
+  letter-spacing: 0.3em;
+  z-index: 1;
+  /*Делаем grid блок для установки расстояния между словами по вертикали*/
+  display: grid;
+  gap: 20px;
+}
+
+.aligned-text {
+  /*Делаем текст блоком, чтобы он переносился на новую строку*/
+  display: block;
+}
+
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.no-letter-spacing {
+  /*Компенсируем letter-spacing для последней буквы через margin-right*/
+  margin-right: -0.3em;
+}
+
+.cover__description {
+  z-index: 1;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text {
+  line-height: 28px;
+  word-spacing: 85%;
+}
+
+.bet-button {
+  background-color: transparent;
+  border: solid 1px #fff ;
+  color: #fff;
+  font-family: Raleway;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 32px;
 }

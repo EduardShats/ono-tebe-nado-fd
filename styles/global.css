@@ -27,6 +27,10 @@ blockquote {
 
 a {
   color: inherit;
+
+  /*сделано, чтобы подчеркивание от ссылки не терялось за текстом*/
+    text-decoration: none;
+    border-bottom: solid 1px;
 }
 
 img {
@@ -35,10 +39,4 @@ img {
 
 button {
   font: inherit;
-}
-
-a {
-  /*сделано, чтобы подчеркивание от ссылки не терялось за текстом*/
-  text-decoration: none;
-  border-bottom: solid 1px;
 }
