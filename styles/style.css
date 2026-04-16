@@ -30,6 +30,12 @@
   list-style: none;
 }
 
+.header__link {
+  /*сделано, чтобы подчеркивание от ссылки не терялось за текстом*/
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
 .header__link_active {
   border-bottom: 0;
 }
@@ -38,7 +44,6 @@
   display: block;
   width: 148px;
   height: 105px;
-  border: 0;
 }
 
 .header__logo-image {
@@ -52,25 +57,19 @@
 }
 
 .address {
-  max-width: 240px;
   justify-self: end;
+  font-style: normal;
 }
 
 .header__address {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  list-style: none;
+  max-width: 240px;
+  font-size: 18px;
+  line-height: 1.35em;
   /*
   Этот код, если нужно сдвинуть контакты как в макете,
   седал его по центру, т.к. более эстетично:
-  margin-top: -7px;
+  margin-top: -6px;
   */
-}
-
-.header__address-item {
-  font-size: 18px;
-  line-height: 1.35em;
 }
 
 .cover {
@@ -150,4 +149,86 @@
   text-align: center;
   text-transform: uppercase;
   padding: 12px 32px;
+}
+
+.lots {
+  margin: 180px 24px 120px;
+}
+
+.lots__heading {
+  margin-left: 40px;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  justify-content: column;
+}
+
+.lots__card-list-item {
+  min-height: 596px;
+  max-width: 334px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 48px 40px;
+  color: #fff;
+}
+
+.card_type_film {
+  background-image: url('../images/card-lot-01.jpg');
+}
+
+.card_type_book {
+  background-image: url('../images/card-lot-02.jpg');
+}
+
+.card_type_picture {
+  background-image: url('../images/card-lot-03.jpg');
+}
+
+.card__title {
+  z-index: 1;
+  position: relative;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  /*сделано, чтобы подчеркивание не терялось за текстом*/
+  text-underline-offset: 4px;
+}
+
+.card__text {
+  z-index: 1;
+  position: relative;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.lots__look-more-link {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 20px;
+  /*сделано, чтобы подчеркивание от ссылки не терялось за текстом*/
+  text-decoration: none;
+  border-bottom: 1px solid;
 }

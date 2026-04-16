@@ -27,10 +27,6 @@ blockquote {
 
 a {
   color: inherit;
-
-  /*сделано, чтобы подчеркивание от ссылки не терялось за текстом*/
-    text-decoration: none;
-    border-bottom: solid 1px;
 }
 
 img {
