@@ -72,6 +72,12 @@
   */
 }
 
+.address__link {
+  /*сделано, чтобы подчеркивание от ссылки не терялось за текстом*/
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
 .cover {
   background-image: url('../images/cover.jpg');
   background-size: cover;
@@ -167,7 +173,6 @@
   list-style: none;
   display: flex;
   gap: 25px;
-  justify-content: column;
   flex-wrap: wrap;
 }
 
@@ -277,7 +282,6 @@
 }
 
 .footer {
-  min-height: 180px;
   padding: 0 50px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
