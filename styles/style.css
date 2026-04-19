@@ -151,7 +151,7 @@
   background-color: transparent;
   border: solid 1px #fff ;
   color: #fff;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   text-align: center;
   text-transform: uppercase;
   padding: 12px 32px;
@@ -282,7 +282,7 @@
 }
 
 .footer {
-  padding: 0 50px;
+  padding: 0 50px 82px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   justify-content: space-between;
